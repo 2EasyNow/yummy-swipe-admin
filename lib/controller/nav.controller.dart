@@ -11,11 +11,7 @@ class NavigationController extends GetxController {
   final selectedIndex = 0.obs;
 
   List<Map<String, dynamic>> sidebar_options = [
-    {
-      'title': 'Home',
-      'icon': Icons.home,
-      'widget': HomePage(),
-    },
+    
     {
       'title': 'Restaurants',
       'icon': Icons.restaurant,

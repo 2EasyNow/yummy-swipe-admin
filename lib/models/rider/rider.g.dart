@@ -30,14 +30,14 @@ abstract class RiderCollectionReference
     DocumentSnapshot<Map<String, Object?>> snapshot,
     SnapshotOptions? options,
   ) {
-    return Rider.fromJson(snapshot.data()!);
+    return Rider.fromJson({'id': snapshot.id, ...?snapshot.data()});
   }
 
   static Map<String, Object?> toFirestore(
     Rider value,
     SetOptions? options,
   ) {
-    return _$RiderToJson(value);
+    return {..._$RiderToJson(value)}..remove('id');
   }
 
   @override
@@ -268,28 +268,39 @@ class _$RiderDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (name != _sentinel) 'name': name as String,
-      if (nameFieldValue != null) 'name': nameFieldValue,
-      if (phone != _sentinel) 'phone': phone as String,
-      if (phoneFieldValue != null) 'phone': phoneFieldValue,
-      if (city != _sentinel) 'city': city as String,
-      if (cityFieldValue != null) 'city': cityFieldValue,
-      if (vehicleType != _sentinel) 'vehicleType': vehicleType as String,
-      if (vehicleTypeFieldValue != null) 'vehicleType': vehicleTypeFieldValue,
-      if (isAvailable != _sentinel) 'isAvailable': isAvailable as bool,
-      if (isAvailableFieldValue != null) 'isAvailable': isAvailableFieldValue,
+      if (name != _sentinel) _$RiderFieldMap['name']!: name as String,
+      if (nameFieldValue != null) _$RiderFieldMap['name']!: nameFieldValue,
+      if (phone != _sentinel) _$RiderFieldMap['phone']!: phone as String,
+      if (phoneFieldValue != null) _$RiderFieldMap['phone']!: phoneFieldValue,
+      if (city != _sentinel) _$RiderFieldMap['city']!: city as String,
+      if (cityFieldValue != null) _$RiderFieldMap['city']!: cityFieldValue,
+      if (vehicleType != _sentinel)
+        _$RiderFieldMap['vehicleType']!: vehicleType as String,
+      if (vehicleTypeFieldValue != null)
+        _$RiderFieldMap['vehicleType']!: vehicleTypeFieldValue,
+      if (isAvailable != _sentinel)
+        _$RiderFieldMap['isAvailable']!: isAvailable as bool,
+      if (isAvailableFieldValue != null)
+        _$RiderFieldMap['isAvailable']!: isAvailableFieldValue,
       if (currentOrderId != _sentinel)
-        'currentOrderId': currentOrderId as String,
+        _$RiderFieldMap['currentOrderId']!: currentOrderId as String,
       if (currentOrderIdFieldValue != null)
-        'currentOrderId': currentOrderIdFieldValue,
-      if (active != _sentinel) 'active': active as bool,
-      if (activeFieldValue != null) 'active': activeFieldValue,
-      if (fcmTokens != _sentinel) 'fcmTokens': fcmTokens as List<String>,
-      if (fcmTokensFieldValue != null) 'fcmTokens': fcmTokensFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$RiderFieldMap['currentOrderId']!: currentOrderIdFieldValue,
+      if (active != _sentinel) _$RiderFieldMap['active']!: active as bool,
+      if (activeFieldValue != null)
+        _$RiderFieldMap['active']!: activeFieldValue,
+      if (fcmTokens != _sentinel)
+        _$RiderFieldMap['fcmTokens']!: fcmTokens as List<String>,
+      if (fcmTokensFieldValue != null)
+        _$RiderFieldMap['fcmTokens']!: fcmTokensFieldValue,
+      if (createdAt != _sentinel)
+        _$RiderFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$RiderFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$RiderFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$RiderFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     return reference.update(json);
@@ -359,28 +370,39 @@ class _$RiderDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (name != _sentinel) 'name': name as String,
-      if (nameFieldValue != null) 'name': nameFieldValue,
-      if (phone != _sentinel) 'phone': phone as String,
-      if (phoneFieldValue != null) 'phone': phoneFieldValue,
-      if (city != _sentinel) 'city': city as String,
-      if (cityFieldValue != null) 'city': cityFieldValue,
-      if (vehicleType != _sentinel) 'vehicleType': vehicleType as String,
-      if (vehicleTypeFieldValue != null) 'vehicleType': vehicleTypeFieldValue,
-      if (isAvailable != _sentinel) 'isAvailable': isAvailable as bool,
-      if (isAvailableFieldValue != null) 'isAvailable': isAvailableFieldValue,
+      if (name != _sentinel) _$RiderFieldMap['name']!: name as String,
+      if (nameFieldValue != null) _$RiderFieldMap['name']!: nameFieldValue,
+      if (phone != _sentinel) _$RiderFieldMap['phone']!: phone as String,
+      if (phoneFieldValue != null) _$RiderFieldMap['phone']!: phoneFieldValue,
+      if (city != _sentinel) _$RiderFieldMap['city']!: city as String,
+      if (cityFieldValue != null) _$RiderFieldMap['city']!: cityFieldValue,
+      if (vehicleType != _sentinel)
+        _$RiderFieldMap['vehicleType']!: vehicleType as String,
+      if (vehicleTypeFieldValue != null)
+        _$RiderFieldMap['vehicleType']!: vehicleTypeFieldValue,
+      if (isAvailable != _sentinel)
+        _$RiderFieldMap['isAvailable']!: isAvailable as bool,
+      if (isAvailableFieldValue != null)
+        _$RiderFieldMap['isAvailable']!: isAvailableFieldValue,
       if (currentOrderId != _sentinel)
-        'currentOrderId': currentOrderId as String,
+        _$RiderFieldMap['currentOrderId']!: currentOrderId as String,
       if (currentOrderIdFieldValue != null)
-        'currentOrderId': currentOrderIdFieldValue,
-      if (active != _sentinel) 'active': active as bool,
-      if (activeFieldValue != null) 'active': activeFieldValue,
-      if (fcmTokens != _sentinel) 'fcmTokens': fcmTokens as List<String>,
-      if (fcmTokensFieldValue != null) 'fcmTokens': fcmTokensFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$RiderFieldMap['currentOrderId']!: currentOrderIdFieldValue,
+      if (active != _sentinel) _$RiderFieldMap['active']!: active as bool,
+      if (activeFieldValue != null)
+        _$RiderFieldMap['active']!: activeFieldValue,
+      if (fcmTokens != _sentinel)
+        _$RiderFieldMap['fcmTokens']!: fcmTokens as List<String>,
+      if (fcmTokensFieldValue != null)
+        _$RiderFieldMap['fcmTokens']!: fcmTokensFieldValue,
+      if (createdAt != _sentinel)
+        _$RiderFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$RiderFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$RiderFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$RiderFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     transaction.update(reference, json);
@@ -2081,6 +2103,7 @@ class RiderQueryDocumentSnapshot extends FirestoreQueryDocumentSnapshot<Rider>
 // **************************************************************************
 
 Rider _$RiderFromJson(Map<String, dynamic> json) => Rider(
+      id: json['id'] as String? ?? '',
       name: json['name'] as String,
       phone: json['phone'] as String,
       city: json['city'] as String,
@@ -2101,6 +2124,7 @@ Rider _$RiderFromJson(Map<String, dynamic> json) => Rider(
     );
 
 const _$RiderFieldMap = <String, String>{
+  'id': 'id',
   'name': 'name',
   'phone': 'phone',
   'city': 'city',
@@ -2116,6 +2140,7 @@ const _$RiderFieldMap = <String, String>{
 };
 
 Map<String, dynamic> _$RiderToJson(Rider instance) => <String, dynamic>{
+      'id': instance.id,
       'name': instance.name,
       'phone': instance.phone,
       'city': instance.city,

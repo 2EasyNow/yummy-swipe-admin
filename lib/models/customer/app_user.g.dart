@@ -244,20 +244,26 @@ class _$AppUserDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (name != _sentinel) 'name': name as String,
-      if (nameFieldValue != null) 'name': nameFieldValue,
-      if (phone != _sentinel) 'phone': phone as String,
-      if (phoneFieldValue != null) 'phone': phoneFieldValue,
+      if (name != _sentinel) _$AppUserFieldMap['name']!: name as String,
+      if (nameFieldValue != null) _$AppUserFieldMap['name']!: nameFieldValue,
+      if (phone != _sentinel) _$AppUserFieldMap['phone']!: phone as String,
+      if (phoneFieldValue != null) _$AppUserFieldMap['phone']!: phoneFieldValue,
       if (selectedAddressId != _sentinel)
-        'selectedAddressId': selectedAddressId as String,
+        _$AppUserFieldMap['selectedAddressId']!: selectedAddressId as String,
       if (selectedAddressIdFieldValue != null)
-        'selectedAddressId': selectedAddressIdFieldValue,
-      if (fcmTokens != _sentinel) 'fcmTokens': fcmTokens as List<String>,
-      if (fcmTokensFieldValue != null) 'fcmTokens': fcmTokensFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$AppUserFieldMap['selectedAddressId']!: selectedAddressIdFieldValue,
+      if (fcmTokens != _sentinel)
+        _$AppUserFieldMap['fcmTokens']!: fcmTokens as List<String>,
+      if (fcmTokensFieldValue != null)
+        _$AppUserFieldMap['fcmTokens']!: fcmTokensFieldValue,
+      if (createdAt != _sentinel)
+        _$AppUserFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$AppUserFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$AppUserFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$AppUserFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     return reference.update(json);
@@ -303,20 +309,26 @@ class _$AppUserDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (name != _sentinel) 'name': name as String,
-      if (nameFieldValue != null) 'name': nameFieldValue,
-      if (phone != _sentinel) 'phone': phone as String,
-      if (phoneFieldValue != null) 'phone': phoneFieldValue,
+      if (name != _sentinel) _$AppUserFieldMap['name']!: name as String,
+      if (nameFieldValue != null) _$AppUserFieldMap['name']!: nameFieldValue,
+      if (phone != _sentinel) _$AppUserFieldMap['phone']!: phone as String,
+      if (phoneFieldValue != null) _$AppUserFieldMap['phone']!: phoneFieldValue,
       if (selectedAddressId != _sentinel)
-        'selectedAddressId': selectedAddressId as String,
+        _$AppUserFieldMap['selectedAddressId']!: selectedAddressId as String,
       if (selectedAddressIdFieldValue != null)
-        'selectedAddressId': selectedAddressIdFieldValue,
-      if (fcmTokens != _sentinel) 'fcmTokens': fcmTokens as List<String>,
-      if (fcmTokensFieldValue != null) 'fcmTokens': fcmTokensFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$AppUserFieldMap['selectedAddressId']!: selectedAddressIdFieldValue,
+      if (fcmTokens != _sentinel)
+        _$AppUserFieldMap['fcmTokens']!: fcmTokens as List<String>,
+      if (fcmTokensFieldValue != null)
+        _$AppUserFieldMap['fcmTokens']!: fcmTokensFieldValue,
+      if (createdAt != _sentinel)
+        _$AppUserFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$AppUserFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$AppUserFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$AppUserFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     transaction.update(reference, json);
@@ -1720,13 +1732,16 @@ class _$AddressDocumentReference
       "Cannot specify both noteForRider and noteForRiderFieldValue",
     );
     final json = {
-      if (address != _sentinel) 'address': address as String,
-      if (addressFieldValue != null) 'address': addressFieldValue,
-      if (city != _sentinel) 'city': city as String,
-      if (cityFieldValue != null) 'city': cityFieldValue,
-      if (noteForRider != _sentinel) 'noteForRider': noteForRider as String,
+      if (address != _sentinel)
+        _$AddressFieldMap['address']!: address as String,
+      if (addressFieldValue != null)
+        _$AddressFieldMap['address']!: addressFieldValue,
+      if (city != _sentinel) _$AddressFieldMap['city']!: city as String,
+      if (cityFieldValue != null) _$AddressFieldMap['city']!: cityFieldValue,
+      if (noteForRider != _sentinel)
+        _$AddressFieldMap['noteForRider']!: noteForRider as String,
       if (noteForRiderFieldValue != null)
-        'noteForRider': noteForRiderFieldValue,
+        _$AddressFieldMap['noteForRider']!: noteForRiderFieldValue,
     };
 
     return reference.update(json);
@@ -1754,13 +1769,16 @@ class _$AddressDocumentReference
       "Cannot specify both noteForRider and noteForRiderFieldValue",
     );
     final json = {
-      if (address != _sentinel) 'address': address as String,
-      if (addressFieldValue != null) 'address': addressFieldValue,
-      if (city != _sentinel) 'city': city as String,
-      if (cityFieldValue != null) 'city': cityFieldValue,
-      if (noteForRider != _sentinel) 'noteForRider': noteForRider as String,
+      if (address != _sentinel)
+        _$AddressFieldMap['address']!: address as String,
+      if (addressFieldValue != null)
+        _$AddressFieldMap['address']!: addressFieldValue,
+      if (city != _sentinel) _$AddressFieldMap['city']!: city as String,
+      if (cityFieldValue != null) _$AddressFieldMap['city']!: cityFieldValue,
+      if (noteForRider != _sentinel)
+        _$AddressFieldMap['noteForRider']!: noteForRider as String,
       if (noteForRiderFieldValue != null)
-        'noteForRider': noteForRiderFieldValue,
+        _$AddressFieldMap['noteForRider']!: noteForRiderFieldValue,
     };
 
     transaction.update(reference, json);
@@ -2811,17 +2829,25 @@ class _$CartDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (restaurantId != _sentinel) 'restaurantId': restaurantId as String,
+      if (restaurantId != _sentinel)
+        _$CartFieldMap['restaurantId']!: restaurantId as String,
       if (restaurantIdFieldValue != null)
-        'restaurantId': restaurantIdFieldValue,
-      if (productId != _sentinel) 'productId': productId as String,
-      if (productIdFieldValue != null) 'productId': productIdFieldValue,
-      if (quantity != _sentinel) 'quantity': quantity as int,
-      if (quantityFieldValue != null) 'quantity': quantityFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$CartFieldMap['restaurantId']!: restaurantIdFieldValue,
+      if (productId != _sentinel)
+        _$CartFieldMap['productId']!: productId as String,
+      if (productIdFieldValue != null)
+        _$CartFieldMap['productId']!: productIdFieldValue,
+      if (quantity != _sentinel) _$CartFieldMap['quantity']!: quantity as int,
+      if (quantityFieldValue != null)
+        _$CartFieldMap['quantity']!: quantityFieldValue,
+      if (createdAt != _sentinel)
+        _$CartFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$CartFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$CartFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$CartFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     return reference.update(json);
@@ -2861,17 +2887,25 @@ class _$CartDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (restaurantId != _sentinel) 'restaurantId': restaurantId as String,
+      if (restaurantId != _sentinel)
+        _$CartFieldMap['restaurantId']!: restaurantId as String,
       if (restaurantIdFieldValue != null)
-        'restaurantId': restaurantIdFieldValue,
-      if (productId != _sentinel) 'productId': productId as String,
-      if (productIdFieldValue != null) 'productId': productIdFieldValue,
-      if (quantity != _sentinel) 'quantity': quantity as int,
-      if (quantityFieldValue != null) 'quantity': quantityFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$CartFieldMap['restaurantId']!: restaurantIdFieldValue,
+      if (productId != _sentinel)
+        _$CartFieldMap['productId']!: productId as String,
+      if (productIdFieldValue != null)
+        _$CartFieldMap['productId']!: productIdFieldValue,
+      if (quantity != _sentinel) _$CartFieldMap['quantity']!: quantity as int,
+      if (quantityFieldValue != null)
+        _$CartFieldMap['quantity']!: quantityFieldValue,
+      if (createdAt != _sentinel)
+        _$CartFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$CartFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$CartFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$CartFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     transaction.update(reference, json);

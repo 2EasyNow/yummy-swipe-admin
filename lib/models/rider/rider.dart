@@ -15,6 +15,7 @@ enum RiderAgeCategory {
 @JsonSerializable(createFieldMap: true)
 class Rider {
   Rider({
+    this.id = '',
     required this.name,
     required this.phone,
     required this.city,
@@ -68,7 +69,8 @@ class Rider {
       fcmTokens: fcmTokens ?? this.fcmTokens,
     );
   }
-
+  @Id()
+  final String id;
   final String name;
   final String phone;
   final String city;

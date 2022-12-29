@@ -279,34 +279,49 @@ class _$RestaurantDocumentReference
       "Cannot specify both active and activeFieldValue",
     );
     final json = {
-      if (name != _sentinel) 'name': name as String,
-      if (nameFieldValue != null) 'name': nameFieldValue,
-      if (ownerName != _sentinel) 'ownerName': ownerName as String,
-      if (ownerNameFieldValue != null) 'ownerName': ownerNameFieldValue,
-      if (phone != _sentinel) 'phone': phone as String,
-      if (phoneFieldValue != null) 'phone': phoneFieldValue,
-      if (address != _sentinel) 'address': address as String,
-      if (addressFieldValue != null) 'address': addressFieldValue,
+      if (name != _sentinel) _$RestaurantFieldMap['name']!: name as String,
+      if (nameFieldValue != null) _$RestaurantFieldMap['name']!: nameFieldValue,
+      if (ownerName != _sentinel)
+        _$RestaurantFieldMap['ownerName']!: ownerName as String,
+      if (ownerNameFieldValue != null)
+        _$RestaurantFieldMap['ownerName']!: ownerNameFieldValue,
+      if (phone != _sentinel) _$RestaurantFieldMap['phone']!: phone as String,
+      if (phoneFieldValue != null)
+        _$RestaurantFieldMap['phone']!: phoneFieldValue,
+      if (address != _sentinel)
+        _$RestaurantFieldMap['address']!: address as String,
+      if (addressFieldValue != null)
+        _$RestaurantFieldMap['address']!: addressFieldValue,
       if (bannerImagePath != _sentinel)
-        'bannerImagePath': bannerImagePath as String,
+        _$RestaurantFieldMap['bannerImagePath']!: bannerImagePath as String,
       if (bannerImagePathFieldValue != null)
-        'bannerImagePath': bannerImagePathFieldValue,
+        _$RestaurantFieldMap['bannerImagePath']!: bannerImagePathFieldValue,
       if (foodOfferingTypes != _sentinel)
-        'foodOfferingTypes': foodOfferingTypes as List<String>,
+        _$RestaurantFieldMap['foodOfferingTypes']!:
+            foodOfferingTypes as List<String>,
       if (foodOfferingTypesFieldValue != null)
-        'foodOfferingTypes': foodOfferingTypesFieldValue,
-      if (fcmTokens != _sentinel) 'fcmTokens': fcmTokens as List<String>,
-      if (fcmTokensFieldValue != null) 'fcmTokens': fcmTokensFieldValue,
+        _$RestaurantFieldMap['foodOfferingTypes']!: foodOfferingTypesFieldValue,
+      if (fcmTokens != _sentinel)
+        _$RestaurantFieldMap['fcmTokens']!: fcmTokens as List<String>,
+      if (fcmTokensFieldValue != null)
+        _$RestaurantFieldMap['fcmTokens']!: fcmTokensFieldValue,
       if (averageTimeToCompleteOrder != _sentinel)
-        'averageTimeToCompleteOrder': averageTimeToCompleteOrder as int,
+        _$RestaurantFieldMap['averageTimeToCompleteOrder']!:
+            averageTimeToCompleteOrder as int,
       if (averageTimeToCompleteOrderFieldValue != null)
-        'averageTimeToCompleteOrder': averageTimeToCompleteOrderFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
-      if (active != _sentinel) 'active': active as bool,
-      if (activeFieldValue != null) 'active': activeFieldValue,
+        _$RestaurantFieldMap['averageTimeToCompleteOrder']!:
+            averageTimeToCompleteOrderFieldValue,
+      if (createdAt != _sentinel)
+        _$RestaurantFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$RestaurantFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$RestaurantFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$RestaurantFieldMap['updatedAt']!: updatedAtFieldValue,
+      if (active != _sentinel) _$RestaurantFieldMap['active']!: active as bool,
+      if (activeFieldValue != null)
+        _$RestaurantFieldMap['active']!: activeFieldValue,
     };
 
     return reference.update(json);
@@ -383,34 +398,49 @@ class _$RestaurantDocumentReference
       "Cannot specify both active and activeFieldValue",
     );
     final json = {
-      if (name != _sentinel) 'name': name as String,
-      if (nameFieldValue != null) 'name': nameFieldValue,
-      if (ownerName != _sentinel) 'ownerName': ownerName as String,
-      if (ownerNameFieldValue != null) 'ownerName': ownerNameFieldValue,
-      if (phone != _sentinel) 'phone': phone as String,
-      if (phoneFieldValue != null) 'phone': phoneFieldValue,
-      if (address != _sentinel) 'address': address as String,
-      if (addressFieldValue != null) 'address': addressFieldValue,
+      if (name != _sentinel) _$RestaurantFieldMap['name']!: name as String,
+      if (nameFieldValue != null) _$RestaurantFieldMap['name']!: nameFieldValue,
+      if (ownerName != _sentinel)
+        _$RestaurantFieldMap['ownerName']!: ownerName as String,
+      if (ownerNameFieldValue != null)
+        _$RestaurantFieldMap['ownerName']!: ownerNameFieldValue,
+      if (phone != _sentinel) _$RestaurantFieldMap['phone']!: phone as String,
+      if (phoneFieldValue != null)
+        _$RestaurantFieldMap['phone']!: phoneFieldValue,
+      if (address != _sentinel)
+        _$RestaurantFieldMap['address']!: address as String,
+      if (addressFieldValue != null)
+        _$RestaurantFieldMap['address']!: addressFieldValue,
       if (bannerImagePath != _sentinel)
-        'bannerImagePath': bannerImagePath as String,
+        _$RestaurantFieldMap['bannerImagePath']!: bannerImagePath as String,
       if (bannerImagePathFieldValue != null)
-        'bannerImagePath': bannerImagePathFieldValue,
+        _$RestaurantFieldMap['bannerImagePath']!: bannerImagePathFieldValue,
       if (foodOfferingTypes != _sentinel)
-        'foodOfferingTypes': foodOfferingTypes as List<String>,
+        _$RestaurantFieldMap['foodOfferingTypes']!:
+            foodOfferingTypes as List<String>,
       if (foodOfferingTypesFieldValue != null)
-        'foodOfferingTypes': foodOfferingTypesFieldValue,
-      if (fcmTokens != _sentinel) 'fcmTokens': fcmTokens as List<String>,
-      if (fcmTokensFieldValue != null) 'fcmTokens': fcmTokensFieldValue,
+        _$RestaurantFieldMap['foodOfferingTypes']!: foodOfferingTypesFieldValue,
+      if (fcmTokens != _sentinel)
+        _$RestaurantFieldMap['fcmTokens']!: fcmTokens as List<String>,
+      if (fcmTokensFieldValue != null)
+        _$RestaurantFieldMap['fcmTokens']!: fcmTokensFieldValue,
       if (averageTimeToCompleteOrder != _sentinel)
-        'averageTimeToCompleteOrder': averageTimeToCompleteOrder as int,
+        _$RestaurantFieldMap['averageTimeToCompleteOrder']!:
+            averageTimeToCompleteOrder as int,
       if (averageTimeToCompleteOrderFieldValue != null)
-        'averageTimeToCompleteOrder': averageTimeToCompleteOrderFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
-      if (active != _sentinel) 'active': active as bool,
-      if (activeFieldValue != null) 'active': activeFieldValue,
+        _$RestaurantFieldMap['averageTimeToCompleteOrder']!:
+            averageTimeToCompleteOrderFieldValue,
+      if (createdAt != _sentinel)
+        _$RestaurantFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$RestaurantFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$RestaurantFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$RestaurantFieldMap['updatedAt']!: updatedAtFieldValue,
+      if (active != _sentinel) _$RestaurantFieldMap['active']!: active as bool,
+      if (activeFieldValue != null)
+        _$RestaurantFieldMap['active']!: activeFieldValue,
     };
 
     transaction.update(reference, json);

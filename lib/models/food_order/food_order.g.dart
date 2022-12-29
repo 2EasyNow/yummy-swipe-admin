@@ -258,25 +258,42 @@ class _$FoodOrderDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (customerId != _sentinel) 'customerId': customerId as String,
-      if (customerIdFieldValue != null) 'customerId': customerIdFieldValue,
-      if (restaurantId != _sentinel) 'restaurantId': restaurantId as String,
+      if (customerId != _sentinel)
+        _$FoodOrderFieldMap['customerId']!: customerId as String,
+      if (customerIdFieldValue != null)
+        _$FoodOrderFieldMap['customerId']!: customerIdFieldValue,
+      if (restaurantId != _sentinel)
+        _$FoodOrderFieldMap['restaurantId']!: restaurantId as String,
       if (restaurantIdFieldValue != null)
-        'restaurantId': restaurantIdFieldValue,
-      if (riderId != _sentinel) 'riderId': riderId as String,
-      if (riderIdFieldValue != null) 'riderId': riderIdFieldValue,
-      if (subTotal != _sentinel) 'subTotal': subTotal as int,
-      if (subTotalFieldValue != null) 'subTotal': subTotalFieldValue,
-      if (deliveryFee != _sentinel) 'deliveryFee': deliveryFee as int,
-      if (deliveryFeeFieldValue != null) 'deliveryFee': deliveryFeeFieldValue,
-      if (platformFee != _sentinel) 'platformFee': platformFee as int,
-      if (platformFeeFieldValue != null) 'platformFee': platformFeeFieldValue,
-      if (totalItems != _sentinel) 'totalItems': totalItems as int,
-      if (totalItemsFieldValue != null) 'totalItems': totalItemsFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$FoodOrderFieldMap['restaurantId']!: restaurantIdFieldValue,
+      if (riderId != _sentinel)
+        _$FoodOrderFieldMap['riderId']!: riderId as String,
+      if (riderIdFieldValue != null)
+        _$FoodOrderFieldMap['riderId']!: riderIdFieldValue,
+      if (subTotal != _sentinel)
+        _$FoodOrderFieldMap['subTotal']!: subTotal as int,
+      if (subTotalFieldValue != null)
+        _$FoodOrderFieldMap['subTotal']!: subTotalFieldValue,
+      if (deliveryFee != _sentinel)
+        _$FoodOrderFieldMap['deliveryFee']!: deliveryFee as int,
+      if (deliveryFeeFieldValue != null)
+        _$FoodOrderFieldMap['deliveryFee']!: deliveryFeeFieldValue,
+      if (platformFee != _sentinel)
+        _$FoodOrderFieldMap['platformFee']!: platformFee as int,
+      if (platformFeeFieldValue != null)
+        _$FoodOrderFieldMap['platformFee']!: platformFeeFieldValue,
+      if (totalItems != _sentinel)
+        _$FoodOrderFieldMap['totalItems']!: totalItems as int,
+      if (totalItemsFieldValue != null)
+        _$FoodOrderFieldMap['totalItems']!: totalItemsFieldValue,
+      if (createdAt != _sentinel)
+        _$FoodOrderFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$FoodOrderFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$FoodOrderFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$FoodOrderFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     return reference.update(json);
@@ -340,25 +357,42 @@ class _$FoodOrderDocumentReference
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (customerId != _sentinel) 'customerId': customerId as String,
-      if (customerIdFieldValue != null) 'customerId': customerIdFieldValue,
-      if (restaurantId != _sentinel) 'restaurantId': restaurantId as String,
+      if (customerId != _sentinel)
+        _$FoodOrderFieldMap['customerId']!: customerId as String,
+      if (customerIdFieldValue != null)
+        _$FoodOrderFieldMap['customerId']!: customerIdFieldValue,
+      if (restaurantId != _sentinel)
+        _$FoodOrderFieldMap['restaurantId']!: restaurantId as String,
       if (restaurantIdFieldValue != null)
-        'restaurantId': restaurantIdFieldValue,
-      if (riderId != _sentinel) 'riderId': riderId as String,
-      if (riderIdFieldValue != null) 'riderId': riderIdFieldValue,
-      if (subTotal != _sentinel) 'subTotal': subTotal as int,
-      if (subTotalFieldValue != null) 'subTotal': subTotalFieldValue,
-      if (deliveryFee != _sentinel) 'deliveryFee': deliveryFee as int,
-      if (deliveryFeeFieldValue != null) 'deliveryFee': deliveryFeeFieldValue,
-      if (platformFee != _sentinel) 'platformFee': platformFee as int,
-      if (platformFeeFieldValue != null) 'platformFee': platformFeeFieldValue,
-      if (totalItems != _sentinel) 'totalItems': totalItems as int,
-      if (totalItemsFieldValue != null) 'totalItems': totalItemsFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$FoodOrderFieldMap['restaurantId']!: restaurantIdFieldValue,
+      if (riderId != _sentinel)
+        _$FoodOrderFieldMap['riderId']!: riderId as String,
+      if (riderIdFieldValue != null)
+        _$FoodOrderFieldMap['riderId']!: riderIdFieldValue,
+      if (subTotal != _sentinel)
+        _$FoodOrderFieldMap['subTotal']!: subTotal as int,
+      if (subTotalFieldValue != null)
+        _$FoodOrderFieldMap['subTotal']!: subTotalFieldValue,
+      if (deliveryFee != _sentinel)
+        _$FoodOrderFieldMap['deliveryFee']!: deliveryFee as int,
+      if (deliveryFeeFieldValue != null)
+        _$FoodOrderFieldMap['deliveryFee']!: deliveryFeeFieldValue,
+      if (platformFee != _sentinel)
+        _$FoodOrderFieldMap['platformFee']!: platformFee as int,
+      if (platformFeeFieldValue != null)
+        _$FoodOrderFieldMap['platformFee']!: platformFeeFieldValue,
+      if (totalItems != _sentinel)
+        _$FoodOrderFieldMap['totalItems']!: totalItems as int,
+      if (totalItemsFieldValue != null)
+        _$FoodOrderFieldMap['totalItems']!: totalItemsFieldValue,
+      if (createdAt != _sentinel)
+        _$FoodOrderFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$FoodOrderFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$FoodOrderFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$FoodOrderFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     transaction.update(reference, json);

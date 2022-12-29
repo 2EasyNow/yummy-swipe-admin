@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:syncfusion_flutter_datagrid/datagrid.dart';
+import 'package:yummy_swipe_admin/models/rider/rider.dart';
 
 import '../models/restaurant/restaurant.dart';
 
-class RestaurantController extends GetxController {
-  RestaurantDataGridSource dataSource = RestaurantDataGridSource(restaurant: []);
+class RiderController extends GetxController {
+  RiderDataGridSource dataSource = RiderDataGridSource(riders: []);
   bool isDataFecthed = false;
   @override
   void onInit() {
@@ -14,31 +15,30 @@ class RestaurantController extends GetxController {
   }
 
   updateDataSource() async {
-    final value = await userRef.get();
-    final restaurants = value.docs.map((e) => e.data).toList();
-    dataSource = RestaurantDataGridSource(restaurant: restaurants);
+    final value = await riderRef.get();
+    final riders = value.docs.map((e) => e.data).toList();
+    dataSource = RiderDataGridSource(riders: riders);
     isDataFecthed = true;
     update();
   }
 }
 
-class RestaurantDataGridSource extends DataGridSource {
-  RestaurantDataGridSource({required List<Restaurant> restaurant}) {
-    _restaurants = restaurant
+class RiderDataGridSource extends DataGridSource {
+  RiderDataGridSource({required List<Rider> riders}) {
+    _riders = riders
         .map<DataGridRow>((e) => DataGridRow(cells: [
               DataGridCell<String>(columnName: 'id', value: e.id),
               DataGridCell<String>(columnName: 'name', value: e.name),
-              DataGridCell<String>(columnName: 'Owner Name', value: e.ownerName),
               DataGridCell<String>(columnName: 'Phone', value: e.phone),
               DataGridCell<bool>(columnName: 'active', value: e.active),
             ]))
         .toList();
   }
 
-  List<DataGridRow> _restaurants = [];
+  List<DataGridRow> _riders = [];
 
   @override
-  List<DataGridRow> get rows => _restaurants;
+  List<DataGridRow> get rows => _riders;
 
   @override
   DataGridRowAdapter? buildRow(DataGridRow row) {
@@ -72,12 +72,12 @@ class RestaurantDataGridSource extends DataGridSource {
                       // change the status
 
                       final id = row.getCells().first.value;
-                      await userRef.doc(id).update(active: !(dataGridCell.value as bool));
-                      Get.find<RestaurantController>().updateDataSource();
+                      await riderRef.doc(id).update(active: !(dataGridCell.value as bool));
+                      Get.find<RiderController>().updateDataSource();
                       Get.back();
                       Get.snackbar(
                         'Success',
-                        'Restaurant status changed successfully',
+                        'Rider status changed successfully',
                         snackPosition: SnackPosition.BOTTOM,
                       );
                       // _restaurants[restaurantIndex].getCells().last.value = !restaurantActive;

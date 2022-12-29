@@ -271,27 +271,45 @@ class _$OrderProductDocumentReference extends FirestoreDocumentReference<
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (orderId != _sentinel) 'orderId': orderId as String,
-      if (orderIdFieldValue != null) 'orderId': orderIdFieldValue,
-      if (customerId != _sentinel) 'customerId': customerId as String,
-      if (customerIdFieldValue != null) 'customerId': customerIdFieldValue,
-      if (restaurantId != _sentinel) 'restaurantId': restaurantId as String,
+      if (orderId != _sentinel)
+        _$OrderProductFieldMap['orderId']!: orderId as String,
+      if (orderIdFieldValue != null)
+        _$OrderProductFieldMap['orderId']!: orderIdFieldValue,
+      if (customerId != _sentinel)
+        _$OrderProductFieldMap['customerId']!: customerId as String,
+      if (customerIdFieldValue != null)
+        _$OrderProductFieldMap['customerId']!: customerIdFieldValue,
+      if (restaurantId != _sentinel)
+        _$OrderProductFieldMap['restaurantId']!: restaurantId as String,
       if (restaurantIdFieldValue != null)
-        'restaurantId': restaurantIdFieldValue,
-      if (productId != _sentinel) 'productId': productId as String,
-      if (productIdFieldValue != null) 'productId': productIdFieldValue,
-      if (productName != _sentinel) 'productName': productName as String,
-      if (productNameFieldValue != null) 'productName': productNameFieldValue,
-      if (imageName != _sentinel) 'imageName': imageName as String,
-      if (imageNameFieldValue != null) 'imageName': imageNameFieldValue,
-      if (price != _sentinel) 'price': price as int,
-      if (priceFieldValue != null) 'price': priceFieldValue,
-      if (quantity != _sentinel) 'quantity': quantity as int,
-      if (quantityFieldValue != null) 'quantity': quantityFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$OrderProductFieldMap['restaurantId']!: restaurantIdFieldValue,
+      if (productId != _sentinel)
+        _$OrderProductFieldMap['productId']!: productId as String,
+      if (productIdFieldValue != null)
+        _$OrderProductFieldMap['productId']!: productIdFieldValue,
+      if (productName != _sentinel)
+        _$OrderProductFieldMap['productName']!: productName as String,
+      if (productNameFieldValue != null)
+        _$OrderProductFieldMap['productName']!: productNameFieldValue,
+      if (imageName != _sentinel)
+        _$OrderProductFieldMap['imageName']!: imageName as String,
+      if (imageNameFieldValue != null)
+        _$OrderProductFieldMap['imageName']!: imageNameFieldValue,
+      if (price != _sentinel) _$OrderProductFieldMap['price']!: price as int,
+      if (priceFieldValue != null)
+        _$OrderProductFieldMap['price']!: priceFieldValue,
+      if (quantity != _sentinel)
+        _$OrderProductFieldMap['quantity']!: quantity as int,
+      if (quantityFieldValue != null)
+        _$OrderProductFieldMap['quantity']!: quantityFieldValue,
+      if (createdAt != _sentinel)
+        _$OrderProductFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$OrderProductFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$OrderProductFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$OrderProductFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     return reference.update(json);
@@ -361,27 +379,45 @@ class _$OrderProductDocumentReference extends FirestoreDocumentReference<
       "Cannot specify both updatedAt and updatedAtFieldValue",
     );
     final json = {
-      if (orderId != _sentinel) 'orderId': orderId as String,
-      if (orderIdFieldValue != null) 'orderId': orderIdFieldValue,
-      if (customerId != _sentinel) 'customerId': customerId as String,
-      if (customerIdFieldValue != null) 'customerId': customerIdFieldValue,
-      if (restaurantId != _sentinel) 'restaurantId': restaurantId as String,
+      if (orderId != _sentinel)
+        _$OrderProductFieldMap['orderId']!: orderId as String,
+      if (orderIdFieldValue != null)
+        _$OrderProductFieldMap['orderId']!: orderIdFieldValue,
+      if (customerId != _sentinel)
+        _$OrderProductFieldMap['customerId']!: customerId as String,
+      if (customerIdFieldValue != null)
+        _$OrderProductFieldMap['customerId']!: customerIdFieldValue,
+      if (restaurantId != _sentinel)
+        _$OrderProductFieldMap['restaurantId']!: restaurantId as String,
       if (restaurantIdFieldValue != null)
-        'restaurantId': restaurantIdFieldValue,
-      if (productId != _sentinel) 'productId': productId as String,
-      if (productIdFieldValue != null) 'productId': productIdFieldValue,
-      if (productName != _sentinel) 'productName': productName as String,
-      if (productNameFieldValue != null) 'productName': productNameFieldValue,
-      if (imageName != _sentinel) 'imageName': imageName as String,
-      if (imageNameFieldValue != null) 'imageName': imageNameFieldValue,
-      if (price != _sentinel) 'price': price as int,
-      if (priceFieldValue != null) 'price': priceFieldValue,
-      if (quantity != _sentinel) 'quantity': quantity as int,
-      if (quantityFieldValue != null) 'quantity': quantityFieldValue,
-      if (createdAt != _sentinel) 'createdAt': createdAt as DateTime?,
-      if (createdAtFieldValue != null) 'createdAt': createdAtFieldValue,
-      if (updatedAt != _sentinel) 'updatedAt': updatedAt as DateTime,
-      if (updatedAtFieldValue != null) 'updatedAt': updatedAtFieldValue,
+        _$OrderProductFieldMap['restaurantId']!: restaurantIdFieldValue,
+      if (productId != _sentinel)
+        _$OrderProductFieldMap['productId']!: productId as String,
+      if (productIdFieldValue != null)
+        _$OrderProductFieldMap['productId']!: productIdFieldValue,
+      if (productName != _sentinel)
+        _$OrderProductFieldMap['productName']!: productName as String,
+      if (productNameFieldValue != null)
+        _$OrderProductFieldMap['productName']!: productNameFieldValue,
+      if (imageName != _sentinel)
+        _$OrderProductFieldMap['imageName']!: imageName as String,
+      if (imageNameFieldValue != null)
+        _$OrderProductFieldMap['imageName']!: imageNameFieldValue,
+      if (price != _sentinel) _$OrderProductFieldMap['price']!: price as int,
+      if (priceFieldValue != null)
+        _$OrderProductFieldMap['price']!: priceFieldValue,
+      if (quantity != _sentinel)
+        _$OrderProductFieldMap['quantity']!: quantity as int,
+      if (quantityFieldValue != null)
+        _$OrderProductFieldMap['quantity']!: quantityFieldValue,
+      if (createdAt != _sentinel)
+        _$OrderProductFieldMap['createdAt']!: createdAt as DateTime?,
+      if (createdAtFieldValue != null)
+        _$OrderProductFieldMap['createdAt']!: createdAtFieldValue,
+      if (updatedAt != _sentinel)
+        _$OrderProductFieldMap['updatedAt']!: updatedAt as DateTime,
+      if (updatedAtFieldValue != null)
+        _$OrderProductFieldMap['updatedAt']!: updatedAtFieldValue,
     };
 
     transaction.update(reference, json);
